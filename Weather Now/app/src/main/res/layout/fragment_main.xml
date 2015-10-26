@@ -1,0 +1,22 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.sunshine.app.ForecastFragment"
+    android:id="@+id/activity_main_swipe_refresh_layout">
+    <ListView
+        style="@style/ForecastListStyle"
+        android:id="@+id/listview_forecast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null">
+    </ListView>
+
+    <TextView
+        android:id="@+id/listview_forecast_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/empty_forecast_list"
+        android:gravity="center_horizontal"
+        android:padding="16dp"/>
+</android.support.v4.widget.SwipeRefreshLayout>
